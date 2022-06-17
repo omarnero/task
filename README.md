@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-after download source code from githup you must run npm install command important when login and register must be at least 6 charaters
+after download source code from githup you must run npm install command important when login and register password must be at least 6 charaters
 
 ## Available Scripts
 
