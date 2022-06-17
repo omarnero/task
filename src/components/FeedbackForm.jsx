@@ -5,7 +5,6 @@ import Button from "./shared/Button";
 import RatingSelect from "./RatingSelect";
 import { useContext } from "react";
 import Context from "./context/FeedbackContext";
-import { v4 as uuidv4 } from "uuid";
 const FeedbackForm = (props) => {
   const {
     add,
