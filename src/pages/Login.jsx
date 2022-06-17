@@ -36,7 +36,7 @@ function Login() {
         navigate("/todos");
       }
     } catch (error) {
-      toast.error(`mail is incorrect or password`);
+      toast.error(`write a correct email and password to login `);
     }
   };
   return (
