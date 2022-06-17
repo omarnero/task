@@ -58,7 +58,7 @@ function Signin() {
       setLogin(true);
       navigate("/todos");
     } catch (error) {
-      toast.error("error in enter data");
+      toast.error("Set a valid name and email and password must be at least 6 characters");
     }
   };
   return (
