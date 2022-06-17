@@ -9,32 +9,34 @@ import Header from "./components/Header";
 import About from "./pages/About";
 import Login from "./pages/Login";
 import Signin from "./pages/Signin";
+import { FeedbackProvider } from "./components/context/FeedbackContext";
 const App = () => {
   return (
     <>
-      <Router>
-        <Header text="Todo List" />
-        <div className="container">
-          <Routes>
-            <Route path="/" element={<Login />} />
-            <Route
-              path="/todos"
-              exact
-              element={
-                <>
-                  <FeedbackForm />
-                  <FeedbackStats />
-                  <FeedbackList />
-                  <AiconLink />
-                </>
-              }
-            ></Route>
-            <Route path="/sign-in" element={<Signin />} />
-            <Route path="/about" element={<About />} />
-          </Routes>
-        </div>
-      </Router>
-
+      <FeedbackProvider>
+        <Router>
+          <Header text="Todo List" />
+          <div className="container">
+            <Routes>
+              <Route path="/" element={<Login />} />
+              <Route
+                path="/todos"
+                exact
+                element={
+                  <>
+                    <FeedbackForm />
+                    <FeedbackStats />
+                    <FeedbackList />
+                    <AiconLink />
+                  </>
+                }
+              ></Route>
+              <Route path="/sign-in" element={<Signin />} />
+              <Route path="/about" element={<About />} />
+            </Routes>
+          </div>
+        </Router>
+      </FeedbackProvider>
       <ToastContainer />
     </>
   );
