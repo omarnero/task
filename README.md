@@ -47,5 +47,6 @@ create todos and more
 
 ## About app
 
-this app is created by react it's a spa application and using sass mike it responsive for all
+this app is created by react it's a spa application and using sass make it responsive for all
+
 devices
